@@ -9,7 +9,6 @@ function AddToFront(arr, val) {
     // arr[0] = val;
     for(var i = arr.length-1; i<=0; i--){
         arr[i] = arr[i+1];
-        
     }
     arr[0] = val;
     return arr;
@@ -37,7 +36,17 @@ console.log(popFront(x));
 // Insert At
 
 // Given an array, index, and additional value, insert the value into array at given index. Do this without using built-in array methods. You can think of pushFront(arr,val) as equivalent to insertAt(arr,0,val).
+function insertAt(arr, index, val){
+    for(var i = arr.length-1; i<=index; i--){
+        arr[i] = arr[i+1];
+    }
+    arr[index] = val;
+    return arr;
+}
 
+x = insertAt(x,3,3);
+
+console.log(x)
 
 // Remove At
 
