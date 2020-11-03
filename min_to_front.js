@@ -6,7 +6,7 @@
 function moveToFront(arr, ind){
     temp = arr[ind];
     for(var i = ind; i>=0; i--){
-        arr[i] = arr[i+1];
+        arr[i] = arr[i-1];
     }
     arr[0] = temp;
     return arr;
@@ -24,6 +24,6 @@ function minToFront(arr){
     console.log(moveToFront(arr, minIND))
 }
 
-array = [12.34,23,42,35,23,45623,46,34,635,43,52,1];
+array = [12,23,42,35,23,31 ,45623,46,34,635,43,5,2,2,1];
 
 minToFront(array);
