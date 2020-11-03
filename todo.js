@@ -5,18 +5,19 @@
 // Given an array and an additional value, insert this value at the beginning of the array. Do this without using any built-in array methods.
 
 function AddToFront(arr, val) {
-    var temp = arr[0];
-    arr[0] = val;
-    for(var i = 1; i<=arr.length-1; i++){
-        var temp = arr[i];
+    // var temp = arr[0];
+    // arr[0] = val;
+    for(var i = arr.length-1; i<=0; i--){
         arr[i] = arr[i+1];
+        
     }
+    arr[0] = val;
     return arr;
 }
 
-test = [12,12,34,542,35,2];
+var test = [12,12,34,542,35,2];
 
-v = 234;
+var v = 234;
 
 
 console.log(AddToFront(test, v))
