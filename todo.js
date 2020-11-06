@@ -92,15 +92,14 @@ console.log(x)
 //For example, change input ["Brendan",true,42] to [true,"Brendan",42]. As with all array challenges, do this without using any built-in array methods.
 
 function swapPairs(arr){
-    //if(arr.length()%2==0){
+    
         for( var i = 0; i<=arr.length-2; i+=2){
             temp = arr[i+1];
             arr[i+1] = arr[i];
             arr[i] = temp;
         }
         return arr;
-    //}
-
+    
 }
 console.log(swapPairs([0,1,2,3,4,5]));
 console.log(swapPairs([0,1,2,3,4,5,6]));
@@ -110,5 +109,20 @@ console.log(swapPairs([0,1,2,3,4,5,6]));
 // Sara is looking to hire an awesome web developer and has received applications from various sources. Her assistant alphabetized them but noticed some duplicates.
 // Given a sorted array, remove duplicate values. Because array elements are already in order, all duplicate values will be grouped together. As with all these array challenges, 
 //do this without using any built-in array methods.
+
+function removeDuplicates(arr){
+    var current= null;
+    for( var i = 0; i < arr.length; i++ ){
+        
+
+        if ( arr[ i ] == current){
+            removeAt(arr, i);
+            i-=1;
+        }
+        current = arr[i];
+    }
+    return arr;
+}   
+console.log(removeDuplicates([1,2,2,2,7,7,7,7,7,7,7,7,7,7,7, 7]))
 
 // Second: Solve this without using any nested loops.
