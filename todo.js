@@ -28,7 +28,9 @@ var v = 234;
 function popFront(arr){
     for(var i = 0; i < arr.length-1; i++){
         arr[i] = arr[i+1];
+        
     }
+    arr.pop();
     return arr;
 }
 
@@ -42,6 +44,7 @@ console.log(popFront(test));
 
 function insertAt(arr, index, val){
     for(var i = arr.length-1; i>=index; i--){
+
         arr[i+1]=arr[i];
     }
     arr[index] = val;
