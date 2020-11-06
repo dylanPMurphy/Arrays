@@ -32,7 +32,7 @@ function popFront(arr){
     return arr;
 }
 
-//console.log(popFront(test));
+console.log(popFront(test));
 // Insert At
 
 // Given an array, index, and additional value, insert the value into array at given index. Do this without using built-in array methods.\
@@ -57,17 +57,42 @@ console.log(x)
 // Given an array and an index into array, remove and return the array value at that index. Do this without using built-in array methods except pop(). 
 //Think of popFront(arr) as equivalent to removeAt(arr,0).
 
+function removeAt(arr, index){
+    var array = arr;
+    if (index == 0){
+        return popFront(array);
+    }
+    else if(index == arr.length-1){
+        return arr.pop();
+    }
+    else{
+        for(var i = index; i<arr.length; i++){
+            arr[i] = arr[i+1];
+        }
+        return arr.pop();
+    }
 
 
 
+}
+x = [0,1,2,3,4,5]
+removeAt(x,6);
+console.log(x);
+removeAt(x,0);
+console.log(x);
+removeAt(x,2)
+console.log(x)
 
 // Swap Pairs
 
-// Swap positions of successive pairs of values of given array. If length is odd, do not change the final element. For [1,2,3,4], return [2,1,4,3]. For example, change input ["Brendan",true,42] to [true,"Brendan",42]. As with all array challenges, do this without using any built-in array methods.
+// Swap positions of successive pairs of values of given array. If length is odd, do not change the final element. For [1,2,3,4], return [2,1,4,3]. 
+//For example, change input ["Brendan",true,42] to [true,"Brendan",42]. As with all array challenges, do this without using any built-in array methods.
 
 
 // Remove Duplicates
 
-// Sara is looking to hire an awesome web developer and has received applications from various sources. Her assistant alphabetized them but noticed some duplicates. Given a sorted array, remove duplicate values. Because array elements are already in order, all duplicate values will be grouped together. As with all these array challenges, do this without using any built-in array methods.
+// Sara is looking to hire an awesome web developer and has received applications from various sources. Her assistant alphabetized them but noticed some duplicates.
+// Given a sorted array, remove duplicate values. Because array elements are already in order, all duplicate values will be grouped together. As with all these array challenges, 
+//do this without using any built-in array methods.
 
 // Second: Solve this without using any nested loops.
