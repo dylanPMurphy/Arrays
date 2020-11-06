@@ -14,9 +14,9 @@ function AddToFront(arr, val) {
     return arr;
 }
 
-var test = [12,12,34,542,35,2];
+// var test = [12,12,34,542,35,2];
 
-var v = 234;
+// var v = 234;
 
 
 
@@ -34,7 +34,7 @@ function popFront(arr){
     return arr;
 }
 
-console.log(popFront(test));
+// console.log(popFront(test));
 // Insert At
 
 // Given an array, index, and additional value, insert the value into array at given index. Do this without using built-in array methods.\
@@ -51,9 +51,9 @@ function insertAt(arr, index, val){
     return arr;
 }
 
-x = insertAt(test,3,3);
+// x = insertAt(test,3,3);
 
-console.log(x)
+// console.log(x)
 
 // Remove At
 
@@ -78,13 +78,13 @@ function removeAt(arr, index){
 
 
 }
-x = [0,1,2,3,4,5]
-removeAt(x,6);
-console.log(x);
-removeAt(x,0);
-console.log(x);
-removeAt(x,2)
-console.log(x)
+// x = [0,1,2,3,4,5]
+// removeAt(x,6);
+// console.log(x);
+// removeAt(x,0);
+// console.log(x);
+// removeAt(x,2)
+// console.log(x)
 
 // Swap Pairs
 
@@ -101,8 +101,8 @@ function swapPairs(arr){
         return arr;
     
 }
-console.log(swapPairs([0,1,2,3,4,5]));
-console.log(swapPairs([0,1,2,3,4,5,6]));
+// console.log(swapPairs([0,1,2,3,4,5]));
+// console.log(swapPairs([0,1,2,3,4,5,6]));
 
 // Remove Duplicates
 
@@ -123,6 +123,6 @@ function removeDuplicates(arr){
     }
     return arr;
 }   
-console.log(removeDuplicates([1,2,2,2,7,7,7,7,7,7,7,7,7,7,7, 7]))
+// console.log(removeDuplicates([1,2,2,2,7,7,7,7,7,7,7,7,7,7,7, 7])
 
 // Second: Solve this without using any nested loops.
