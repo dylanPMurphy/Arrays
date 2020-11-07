@@ -7,7 +7,9 @@
 // Working ‘in-place’ means that you cannot use a second array – move values within the array that you are given. 
 // As always, do not use built-in array functions such as splice().
 
-
+function reverseArr(arr){
+    
+}
 // Rotate
 
 // Implement rotateArr(arr, shiftBy) that accepts array and offset. 
